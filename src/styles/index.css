@@ -1,0 +1,12 @@
+/*
+ * Styles are plain CSS with design tokens as custom properties.
+ * Order matters: tokens → base → layout → components → screens.
+ */
+@import './tokens.css';
+@import './base.css';
+@import './utilities.css';
+@import './layout.css';
+@import './components.css';
+@import './timer.css';
+@import './screens.css';
+@import './onboarding.css';
