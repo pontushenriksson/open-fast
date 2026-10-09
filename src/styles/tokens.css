@@ -1,0 +1,65 @@
+/* ————————————————————————————————— Tokens */
+:root {
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Instrument Sans Variable', ui-sans-serif, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #0d0f1c;
+  --bg-2: #141729;
+  --card: rgba(255, 255, 255, 0.045);
+  --card-solid: #171a2e;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-2: rgba(255, 255, 255, 0.16);
+  --text: #f1e9da;
+  --muted: #a29fb2;
+  --faint: #6a6880;
+
+  --moon: #8d9cff;
+  --dawn: #f4a259;
+  --sun: #ffd27a;
+  --accent: var(--dawn);
+  --on-accent: #1b1306;
+
+  --ok: #7fcfa8;
+  --gray: #e8c468;
+  --bad: #f17f6b;
+  --ok-bg: rgba(127, 207, 168, 0.12);
+  --gray-bg: rgba(232, 196, 104, 0.13);
+  --bad-bg: rgba(241, 127, 107, 0.13);
+
+  --shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.6);
+  --radius: 22px;
+  --radius-sm: 14px;
+  --gutter: 18px;
+  --tabbar: 68px;
+
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+
+  /* 0 → 1, sätts av timern för "gryningen" i bakgrunden */
+  --glow: 0;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f5eee2;
+  --bg-2: #ece3d3;
+  --card: rgba(255, 252, 245, 0.75);
+  --card-solid: #fffaf1;
+  --line: rgba(28, 26, 43, 0.09);
+  --line-2: rgba(28, 26, 43, 0.18);
+  --text: #1c1a2b;
+  --muted: #625d70;
+  --faint: #9a94a3;
+  --moon: #5566d6;
+  --dawn: #d9722b;
+  --sun: #e8a33a;
+  --on-accent: #fff8ee;
+  --ok: #2b8a60;
+  --gray: #a67c0c;
+  --bad: #c4483a;
+  --ok-bg: rgba(43, 138, 96, 0.11);
+  --gray-bg: rgba(166, 124, 12, 0.12);
+  --bad-bg: rgba(196, 72, 58, 0.11);
+  --shadow: 0 10px 30px -14px rgba(60, 40, 10, 0.35);
+  color-scheme: light;
+}

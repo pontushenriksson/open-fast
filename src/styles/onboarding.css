@@ -1,0 +1,70 @@
+/* ————————————————————————————————— Onboarding */
+.onboarding {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  overflow-y: auto;
+  background:
+    radial-gradient(120% 60% at 50% 110%, color-mix(in srgb, var(--dawn) 30%, transparent), transparent 70%),
+    radial-gradient(80% 50% at 80% 0%, color-mix(in srgb, var(--moon) 22%, transparent), transparent 70%), var(--bg);
+}
+.onboarding-inner {
+  max-width: 480px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: calc(var(--sat) + 48px) 24px calc(var(--sab) + 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.onboarding-mark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 26px;
+}
+.onboarding-title {
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 16px;
+  font-variation-settings:
+    'SOFT' 100,
+    'WONK' 1;
+}
+.onboarding-title em {
+  font-style: italic;
+  background: linear-gradient(90deg, var(--moon), var(--dawn), var(--sun));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.onboarding-dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 26px;
+}
+.onboarding-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: var(--line-2);
+  transition: width 0.3s;
+}
+.onboarding-dots span.on {
+  width: 22px;
+  background: var(--accent);
+}
+.onboarding-title.small {
+  font-size: 36px;
+}
+.agree {
+  align-items: flex-start;
+  cursor: pointer;
+}
+.agree input {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  margin-top: 2px;
+  accent-color: var(--accent);
+}
